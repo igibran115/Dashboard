@@ -42,6 +42,11 @@ app.get('/login',(req, res) =>{
 })
 
 
+app.get('/registro',(req, res) =>{
+    res.render('registro')
+})
+
+
 //Registros
 app.post('/registro', async (req, res) =>{
     const correo = req.body.correo;
