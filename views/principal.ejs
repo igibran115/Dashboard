@@ -1,0 +1,52 @@
+<%- include('dashboard'); %>
+
+<div class="wrapper">
+
+    <div class="one divGrid">
+        <label class="titulosDash">Clima</label>
+            <div id='clima'>
+            </div>
+    </div>
+
+    <div class="two divGrid">
+        <label class="titulosDash">Pais seleccionado</label>
+            <div id='pais' class="nomPais">
+            </div>
+    </div>
+
+    <div class="three divGrid">
+        <label class="titulosDash">Paises Disponibles</label>
+            <div class="alinearPaises">
+                <button id="Mexico" class="botonimagenMX" onclick="obtenerPais('Mexico')"></button><label>Mexico</label>
+                <br>
+                <button id="Germany" class="botonimagenAL" onclick="obtenerPais('Germany')"></button><label>Alemania</label>
+                <br>
+                <button id="Italy" class="botonimagenIT" onclick="obtenerPais('Italy')"></button><label>Italia</label>
+            </div>
+    </div>
+
+    <div class="four divGrid">
+        <label class="titulosDash">Tareas pendientes</label>
+        <iframe src="tareasP" width="395" height="140" >
+        </iframe>
+    </div>
+
+    <div class="five divGrid">
+        <label class="titulosDash">Pais seleccionado</label>
+            <div id='hora' class="nomPais">
+            </div>
+    </div>
+
+    <div class="six divGrid">
+        <label class="titulosDash">Tareas realizadas</label>
+        <iframe src="tareasR" width="395" height="140" >
+        </iframe>
+    </div>
+    <div class="seven divGrid">  
+        <label class="titulosDash">Zonas horarias</label>
+            <div id='zonas' class="alinearPaises">
+            </div>     
+    </div>
+</div>
+</body>
+</html>

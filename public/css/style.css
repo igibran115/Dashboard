@@ -1,0 +1,329 @@
+  /*Estilo de login y registro*/
+
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid #4daadd;
+    box-sizing: border-box;
+  } 
+  
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid #4daadd;
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid #4daadd;
+    box-sizing: border-box;
+  } 
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #3e9eff;
+    border-bottom: 3px solid #0000ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 300;
+    height: 40;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #0000ff;
+  }
+  
+  span.reg {
+    float: right;
+    padding-top: 5px;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+    color: #0000ff;
+  }
+  
+  span.inf {
+    float: left;
+    padding-top: 5px;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .fontsmall {
+    padding-top: 5px;
+    font-family: Verdana;
+    font-size: 10px;
+  }
+
+  .fontsmall2 {
+    padding-top: 5px;
+    font-family: Verdana;
+    font-size: 10px;
+  }
+  
+  body, 
+  html{
+      height: 100%;
+      width: 100%;
+      position: relative;  
+      font-family: Verdana;
+  }
+  .login{
+      width: 300px;
+      border: 1px solid #E1E1E1;
+      border-radius: 4px;
+      padding: 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  @media (max-width: 400px){
+      .login{
+          width: 90%;
+      }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #00a2ff;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial;
+  }
+  
+  li a:hover {
+    background-color: #145da7;
+  }
+
+  .pagactiva {
+  background-color: #145da7;
+  padding: 14px 16px;
+  }
+
+  /* Estilo de los usuarios agregados */
+  .divGridUsuarios{
+    box-shadow: 0px 0px 10px rgb(75, 75, 75);
+    width: 1400px;
+  }
+
+  .usuariosReg{
+    width: 1000px;
+    border-radius: 4px;
+    border-bottom: 2px solid #030405;
+    font-size: 16px;
+    font-family: Verdana;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 10px 10px;
+  }
+
+  .usuariosRegTab{
+    font-size: 14px;
+    font-family: Verdana;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 20px 20px;
+  }
+
+  /* CSS de grid */
+  .titulosDash{
+    width: 100%;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 10px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid #4daadd;
+    color: #c0c0c0;
+    box-sizing: border-box;
+  }
+
+  .divGrid{
+    box-shadow: 0px 0px 10px rgb(75, 75, 75);
+    height: 180px;
+    width: 400px;
+  }
+
+  .divGridPaises{
+    box-shadow: 0px 0px 10px rgb(75, 75, 75);
+    height: 400px;
+    width: 200px;
+
+  }
+
+  .wrapper {
+    display: grid;
+    grid-gap: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+
+  .registros {
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 40px;
+  }
+
+/* Estilo del clima */
+  .clima{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 1px;
+  }  
+
+  .one {
+    grid-column: 1;
+    grid-row: 1;  
+  }
+
+  .tempClima{
+    font-size: 30px;
+    font-family: Verdana;
+    margin-top: 20px;
+  }
+
+  .estClima{
+    font-size: 15px;
+    font-family: Verdana;
+    margin-bottom: 90px;
+  }
+/* Grid del clima  */
+  .columnClima {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*  Estilo del pais seleccionad*/
+  .nomPais{
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .two {
+    grid-column: 2;
+    grid-row: 1;
+  }  
+/* Estilo de los paises disponibles*/
+  
+  .three {
+    grid-column: 3;
+    grid-row: 1 / 3; 
+  }
+
+/* Alinear banderas de paises disponibles */
+  .alinearPaises{
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .four {
+    grid-column: 1;
+    grid-row: 2;
+    
+  }
+  .five {
+    grid-column: 2;
+    grid-row: 2;
+    
+  }
+  .six {
+    grid-column: 1;
+    grid-row: 3;
+    
+  }
+  .seven {
+    grid-column: 2;
+    grid-row: 3;
+    
+  }
+
+  /* Botones de paises */
+  .botonimagenMX{
+    background-image:url(https://flagcdn.com/w40/mx.png);
+    background-repeat:no-repeat;
+    height:25px;
+    width:40px;
+    background-position:center;
+  }
+
+  .botonimagenIT{
+    background-image:url(https://flagcdn.com/w40/it.png);
+    background-repeat:no-repeat;
+    height:25px;
+    width:40px;
+    background-position:center;
+  }
+
+  .botonimagenAL{
+    background-image:url(https://flagcdn.com/w40/de.png);
+    background-repeat:no-repeat;
+    height:25px;
+    width:40px;
+    background-position:center;
+  }
+
+  /*Estilo de tareas*/
+
+  .agregarTarea{
+    margin-left: 100px;
+    text-decoration: none;
+    padding: 2px;
+    font-weight: 100px;
+    font-size: 8px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  .agregarTarea:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }

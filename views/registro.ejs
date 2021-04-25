@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <div>
+        <form action="/registro" method="POST" class="login">
+            <h3>Crear cuenta</h3>
+            <div class="form-group">
+                <label for="correo" class="fontsmall">Correo electronico</label>
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="usuario@correo.com.mx" minlength="10" maxlength="40" required>
+            </div>
+            <div class="form-group">
+                <label for="pass" class="fontsmall">Contraseña</label>
+                <label for="conpass" class="fontsmall2">Confirmar contraseña</label>
+                <br>
+                <input type="password" class="form-control" name="pass" id="Pass" placeholder="***********" minlength="6" required>
+                <input type="password" class="form-control" name="conpass" id="conPass" placeholder="***********" minlength="6" required>
+            </div>
+            <div class="form-group">
+                <label for="name" class="fontsmall">Nombre completo</label>
+                <input type="text" class="form-control" name="name" id="Nombre" placeholder="Gibran Herminio Martinez Andrade" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required>
+            </div>
+            <p class="text-center">
+                <input type="submit" value="Registrarme">
+            </p>
+    
+        </form>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <% if(typeof alert != "undefined"){ %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle %>' ,
+                text: '<%= alertMessage %>',
+                icon: '<%= alertICon %>',
+                showConfirButton: '<%= showConfirmButton %>' ,
+                timer: '<%= timer %>'
+            }).then(()=>{
+                window.location='<%= ruta %>'
+            })
+        </script>
+    <% } %>
+    
+</body>
+</html>

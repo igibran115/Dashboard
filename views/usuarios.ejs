@@ -1,0 +1,36 @@
+<%- include('dashboard'); %>
+
+    <div class="divGridUsuarios registros">
+        <label class="titulosDash">Lista de usuarios del sistema</label>
+        <table class="">
+            <tr>
+                <div>
+                <td class="usuariosReg">Nombre</td>
+                <td class="usuariosReg">Correo electronico</td>
+                <td class="usuariosReg">Fecha de registro</td>
+                <td class="usuariosReg">Ultimo login</td>
+                </div>
+            </tr>
+            <% usuarios.forEach(function(user) { %>
+            <tr>
+                <td class="usuariosRegTab"><%= user.name_user %></td>
+                <td><%= user.email_user %></td>
+                <td><%= user.date_user %></td>
+                <td><%= user.lastlogin_user %></td>
+            </tr>
+            <% }); %>
+        </table>
+    </div>
+
+</body>
+
+
+<script>
+
+var fecha = user.date_user;
+            var nueva = fecha.split(" ")[0];
+            var format = nueva.split("-");
+            var ultima = format[2]+'-'+format[1]+'-'+format[0];
+
+</script>
+</html>
